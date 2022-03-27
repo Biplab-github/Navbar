@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>project</title>
+ <style type="text/css">
+  *{
+    margin:0px;
+    padding:0px;
+  }
+   nav{
+     height:60px;
+     box-shadow:0px 0px 10px grey;
+     display:flex;
+     justify-content:space-between;
+     align-items:center;
+     padding:0px 10px;
+   }
+ 
+   .bars div{
+      width:33px;
+      height:3px;
+     background-color:black;
+     margin-bottom:5px;
+     border-radius:10px;
+   }
+   
+   .bars{
+     cursor:pointer;
+   }
+   
+   h2{
+    margin-top:20px;
+    text-align:center;
+   }
+   
+   img{
+      margin:auto;
+      margin-top:20px;
+      display:block;
+      width:100%;
+   }
+   
+   p{
+     margin-top:30px;
+     margin-left:10px;
+     
+   }
+   
+   #sidebar{
+        width:300px;
+        height:100%;
+        background:linear-gradient(to bottom right, rgb(176, 162, 255), rgb(56, 69, 255));
+        position:fixed;
+        top:0;
+        left:-300px;
+        transition: 0.6s;
+   }
+   
+   #sidebar #content{
+         margin-top:250px;
+   
+   }
+   
+   #sidebar #content a{
+         display:block;
+         text-decoration:none;
+         margin-bottom:18px;
+         text-align:center;
+         font-size:21px;
+         color:white;
+   }
+   
+   .baropen div:nth-child(1) {
+   transform: translate(0px, 10px) rotate(55deg);
+   }
+   .baropen div:nth-child(2) {
+   opacity: 0;
+   }
+   .baropen div:nth-child(3) {
+   transform: translate(0px, -6px) rotate(-55deg);
+   }
+ </style>
+</head>
+<body>
+  <nav>
+   <h1>BIPLABWEB</h1>
+   <div class="bars" id="bars" onclick="sidebar()">
+      <div id="bars1"></div>
+      <div id="bars2"></div>
+      <div id="bars3"></div>
+   </div>
+  </nav>
+  
+   <h2>This is heading</h2>
+     <img src="https://drive.google.com/uc?export=view&id=1E0P9kYLU_gNNascV3imPR2ZfR61bK273" >
+   
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus nemo dolorum quam magni ullam maiores, recusandae
+     ratione rem dolor repellendus optio dolore, in delectus atque unde adipisci facere eveniet vitae dignissimos
+     voluptatem hic inventore neque beatae. Omnis nulla deserunt eaque! Reiciendis dolorum non iste, tempora earum
+     asperiores cupiditate doloribus, quidem perferendis ipsum accusamus alias veniam aliquid possimus veritatis
+     itaque, inventore esse totam facilis consectetur. Repellendus placeat, suscipit inventore assumenda deserunt
+     expedita iste corporis accusamus quos obcaecati quod, rem officia similique nam quidem magni molestias ipsum
+     dignissimos officiis sequi, fugiat est. Quisquam nisi fugit consequatur adipisci cumque voluptatum labore
+     inventore maxime iure ex hic, culpa, animi non repellat sed suscipit dolorem fuga debitis odit eos distinctio
+     architecto! Totam distinctio nam veniam at! Doloribus sapiente laudantium totam. Saepe tempore facere aspernatur
+     dolores aliquid rerum voluptatibus expedita, officiis soluta quis qui quae debitis beatae tenetur nemo iste
+     quos. Vitae reprehenderit a voluptas quaerat et sequi doloribus animi maxime itaque omnis aut ut ab eius enim
+     ipsam eaque nihil, ducimus quam facilis ipsa quos sint quae. Obcaecati perferendis saepe optio! Fugiat impedit
+     saepe recusandae illo? Dolores animi, accusamus deleniti dolorum quos architecto nemo distinctio illum natus?
+     Doloremque, culpa. Minima aliquam fugiat natus quibusdam dolorem id rem quo nostrum ad maxime aliquid,
+     distinctio ullam facere reiciendis. Voluptatibus at ad excepturi dolores maiores, corrupti sequi? Praesentium
+     atque eligendi voluptas quam non ab nihil. Voluptate, voluptas? Ea adipisci eius aspernatur exercitationem
+     molestiae, quaerat blanditiis beatae vitae quas obcaecati dignissimos nostrum, quidem quis facere deserunt
+     consequatur temporibus ipsam impedit aut nulla, sapiente consequuntur quasi odit? Facere vero voluptatum
+     laudantium saepe omnis dolorem nam adipisci, cupiditate nostrum! Sequi est ullam possimus quos nulla repellat
+     accusamus commodi ad, laboriosam facere nesciunt consectetur saepe rem. Delectus facilis at ea provident
+     consequatur tempora, minus quasi vitae voluptas voluptatum? Voluptate et tenetur, quidem, aut perferendis id
+     officia, at excepturi natus tempore consequuntur odio temporibus facilis nihil culpa iusto beatae nulla quasi
+     cum corporis dignissimos deserunt hic doloribus. Dolores ipsam molestias excepturi in dolore laboriosam quasi,
+     ad debitis non optio facere exercitationem et culpa labore facilis? Amet error cupiditate dolores odio
+     doloribus, tempora nam.</p>
+     
+     
+ <div id="sidebar">
+    <div id="content">
+      <a href="#" >Home</a>
+      <a href="#" >About</a>
+      <a href="#" >Services</a>
+      <a href="#" >Contact Us</a>    
+    </div>
+ </div>
+     
+     
+     
+   <script type="text/javascript">
+     function sidebar() {
+     
+     let sidebar = document.getElementById("sidebar");
+     if  (sidebar.style.left =="0%") {
+     sidebar.style.left = "-300px";
+     } else {
+     sidebar.style.left = "0%";
+     }
+     
+   
+     }
+   
+   </script>
+</body>
+</html>
